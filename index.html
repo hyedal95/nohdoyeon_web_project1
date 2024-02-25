@@ -2,17 +2,21 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DYCOMPANY_노도연</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./script/lib/jquery-1.9.0.min.js"></script>
     <script src="./script/dycompany.js" defer></script>
 </head>
 <body>
-   <div id="wrap">
+<div id="wrap">
     <header id="header">
-        <div class="top" title="DYCOMPANY">
-            <h1><a href="#" ><img src="./images/header_logo.png" alt="DYcompany"></a></h1>
+        <div class="top">
+            <h1>
+                <a href="#" title="logo">
+                    <img src="./images/header_logo.png" alt="">
+                </a>
+            </h1>
         </div>
         <div class="bottom">
             <nav id="nav">
@@ -63,11 +67,8 @@
             </div>
         </div>
     </header>
-    <!-- 섹션영역 --> 
-    <main id="main">
-        <!-- 바로가기영역 (CONTACT US)-->
+    <aside id="aside">
         <section id="section1">
-
             <div class="container">
                 <div class="title">
                     <a href="#" ><img src="./images/연락.jpg"  alt="바로가기"></a>
@@ -79,7 +80,6 @@
                 </div>
             </div>
         </section>
-        <!-- 공지사항&갤러리 -->
         <section id="section2">
             <div class="container">
                 <div class="title">
@@ -105,7 +105,6 @@
                 </div>
             </div>
         </section>
-        <!-- 긴급 모집 (슬라이드 효과 넣기) -->
         <section id="section3">
             <div class="container">
                 <div class="title">
@@ -124,7 +123,6 @@
                 </div>
             </div>
         </section>
-        <!-- link 4개 영역 (카카오톡, 인스타그램, 트위터, 유튜브) -->
         <section id="section4">
             <div class="container">
                 <ul>
@@ -155,8 +153,9 @@
                 </ul>
             </div>
         </section>
-    </main> 
-    <aside id="aside"> <!-- 메인슬라이드영역 -->
+    </aside>
+    <!-- 메인슬라이드 영역 -->
+    <main id="main">
         <div class="slide-container">
             <div class="slide-content">
                 <ul class="slide-wrap">
@@ -168,7 +167,7 @@
                 </ul>
             </div>
         </div>
-    </aside>
+    </main>
     <footer id="footer">
         <div class="left">
             <div class="top">
@@ -197,9 +196,16 @@
         </div>
     </footer>
 
-    <!-- 모달창 -->
-    <div class="modal"> <!-- 전체영역 회색 -->
-        <div class="container"> <!-- 팝업창 영역 500*500 -->
+
+
+
+
+
+
+
+    <!-- 모달창  -->
+    <div class="modal"> 
+        <div class="container">
             <div class="title">
                 <h2 title="채용지원 전 필수사항">채용지원 전 필수사항</h2>
 
@@ -219,7 +225,13 @@
             </div>
             <button class="close-btn" title="닫기">닫기</div>
         </div>
-    </div>
-   </div> 
+    </div> 
+</div>
+
+
+
+
+
+
 </body>
 </html>
