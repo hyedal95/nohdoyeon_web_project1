@@ -12,14 +12,20 @@
         },
         header(){
             //모바일버전 메뉴 나타내기 버튼
-            $('.top').on({
+            $('.moblie-btn.hide').on({
                 click(){
                     $('.bottom').addClass('on');
-
+                    $('.moblie-btn').addClass('on');
+           
                 }
             })
-            //모바일버전 메뉴 사라지기 버튼
-           
+            $('.close-button').on({
+                click(){
+                    $('.bottom').removeClass('on');
+                    $(this).removeClass('on');
+                }
+            })
+
 
             //메인버튼 마우스 놓으면 해당 메인메뉴 on활성화 및 서브메뉴 보여지기 효과
             $('.main-btn').on({
